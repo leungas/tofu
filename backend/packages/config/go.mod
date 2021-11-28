@@ -1,4 +1,4 @@
-module githubcom/leungas/tofu/providers/config
+module githubcom/leungas/tofu/packages/config
 
 go 1.17
 
