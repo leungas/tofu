@@ -1,15 +1,14 @@
 //go:build wireinject
 // +build wireinject
 
-package configuration
+package config
 
 import (
-	"githubcom/leungas/tofu/providers/config/services"
-
 	"github.com/google/wire"
+	"github.com/leungas/tofu/packages/config/services"
 )
 
 func Initialize(options []services.ConfigOptions) (ConfigModule, error) {
-	wire.Build(services.New, New)
+	wire.Build(New, services.New)
 	return ConfigModule{}, nil
 }

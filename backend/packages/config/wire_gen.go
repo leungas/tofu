@@ -4,10 +4,10 @@
 //go:build !wireinject
 // +build !wireinject
 
-package configuration
+package config
 
 import (
-	"githubcom/leungas/tofu/providers/config/services"
+	"github.com/leungas/tofu/packages/config/services"
 )
 
 // Injectors from wire.go:

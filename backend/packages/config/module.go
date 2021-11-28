@@ -1,6 +1,6 @@
-package configuration
+package config
 
-import "githubcom/leungas/tofu/providers/config/services"
+import "github.com/leungas/tofu/packages/config/services"
 
 type ConfigModule struct {
 	Service *services.ConfigService
